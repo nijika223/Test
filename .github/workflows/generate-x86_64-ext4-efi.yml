@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Generate x86_64 Firmware
+name: Generate x86_64-ext4-efi Firmware
 
 # Controls when the workflow will run
 on:
@@ -41,7 +41,7 @@ on:
       release_version:
         description: 'GitHub Release'
         required: false
-        default: '1.0.0'
+        default: '1.0.0-ext4-efi'
 
 
 env:
@@ -97,7 +97,7 @@ jobs:
       - name: Run Patch and DIY Scripts
         working-directory: ${{ env.VENDOR }}-imagebuilder-${{ env.VERSION }}-x86-64.Linux-x86_64
         run: |
-          bash scripts/builder-patch.sh
+          bash scripts/builder-patch-ext4-efi.sh
           bash scripts/clash.sh
           bash scripts/zsh.sh
           
