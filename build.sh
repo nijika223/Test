@@ -65,7 +65,7 @@ PACKAGES+=" netdata"                       # Netdata 监控界面
 FILES="files"
 
 # 禁用服务以防止冲突
-DISABLED_SERVICES="sshd dockerd"
+DISABLED_SERVICES="sshd"
 
 # 生成固件
 make image \
