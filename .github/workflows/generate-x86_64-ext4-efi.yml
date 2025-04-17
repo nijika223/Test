@@ -59,7 +59,7 @@ jobs:
       # VERSION: ${{ github.event.inputs.version }}
       # ROOTFS_SIZE: ${{ github.event.inputs.rootfs_size }}
       VERSION: '23.05.4'
-      ROOTFS_SIZE: '2000'
+      ROOTFS_SIZE: '2048'
       RELEASE_VERSION: ${{ github.event.inputs.release_version }}
 
     # Steps represent a sequence of tasks that will be executed as part of the job
